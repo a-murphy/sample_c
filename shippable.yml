@@ -20,7 +20,7 @@ integrations:
     - integrationName: "Test Webhook"
       type: webhook
       payload:
-        - versionName=test
+        - versionName=$BUILD_NUMBER
       on_success: always
       on_failure: always
       on_pull_request: never
