@@ -15,13 +15,13 @@ build:
   post_ci:
     - echo "true"
 
-integrations:
-  notifications:
-    - integrationName: "Test Webhook"
-      type: webhook
-      payload:
-        - versionName=$BUILD_NUMBER
-      on_success: always
-      on_failure: always
-      on_pull_request: never
-      on_start: never
+#integrations:
+#  notifications:
+#    - integrationName: "Test Webhook"
+#      type: webhook
+#      payload:
+#        - versionName=$BUILD_NUMBER
+#      on_success: always
+#      on_failure: always
+#      on_pull_request: never
+#      on_start: never
