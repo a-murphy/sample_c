@@ -5,8 +5,8 @@ compiler:
   - clang
 
 build:
-  pre_ci:
-    - echo 'true'
+#  pre_ci:
+#    - echo 'true'
 
   ci:
     - ./configure && make && make install
