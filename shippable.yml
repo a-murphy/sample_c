@@ -17,6 +17,13 @@ build:
 #  post_ci:
 #    - echo "true"
 
+
+integrations:
+  hub:
+    - integrationName: ECR
+      type: ecr
+      region: us-east-1
+      
 #integrations:
 #  notifications:
 #    - integrationName: "Test Webhook"
