@@ -5,10 +5,12 @@ compiler:
   - clang
 
 build:
-#  pre_ci:
+  pre_ci:
+    - docker pull 544102397216.dkr.ecr.us-east-1.amazonaws.com/testrepository:latest
 #    - echo 'true'
 
   ci:
+    - docker pull 544102397216.dkr.ecr.us-east-1.amazonaws.com/testrepository:latest
     - ./configure && make && make install
     - ./hello
 
