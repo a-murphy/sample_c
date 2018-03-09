@@ -5,12 +5,12 @@ compiler:
   - clang
 
 build:
-  pre_ci:
-    - docker pull 544102397216.dkr.ecr.us-east-1.amazonaws.com/testrepository:latest
+#  pre_ci:
+#    - docker pull 544102397216.dkr.ecr.us-east-1.amazonaws.com/testrepository:latest
 #    - echo 'true'
 
   ci:
-    - docker pull 544102397216.dkr.ecr.us-east-1.amazonaws.com/testrepository:latest
+#    - docker pull 544102397216.dkr.ecr.us-east-1.amazonaws.com/testrepository:latest
     - ./configure && make && make install
     - ./hello
 
@@ -18,11 +18,11 @@ build:
 #    - echo "true"
 
 
-integrations:
-  hub:
-    - integrationName: ECR
-      type: ecr
-      region: us-east-1
+#integrations:
+#  hub:
+#    - integrationName: ECR
+#      type: ecr
+#      region: us-east-1
       
 #integrations:
 #  notifications:
