@@ -11,7 +11,8 @@ build:
 
   ci:
 #    - docker pull 544102397216.dkr.ecr.us-east-1.amazonaws.com/testrepository:latest
-    - ./configure && make && make install
+#    - ./configure && make && make install
+    - make
     - ./hello
 
 #  post_ci:
